@@ -1,0 +1,22 @@
+apiVersion: serving.kserve.io/v1beta1
+kind: InferenceService
+metadata:
+  name: whisperx
+  namespace: radu
+spec:
+  predictor:
+    containers:
+      - name: kserve-container
+        image: quay.io/rd09/whisperx-kserve:v0.1
+        #image: quay.io/rd09/kserve-runtime-whisperx:latest
+        args:
+          - --workers=1
+          - --http_port=8080
+          - --model_name=whisperx
+        resources:
+          limits:
+            cpu: 2
+            memory: 10Gi
+          requests:
+            cpu: 1
+            memory: 4Gi
