@@ -41,6 +41,6 @@ curl -X POST https://<openshift-route-whisperx-predictor>/v1/models/whisperx:pre
       \"align\": true,
       \"diarize\": false
     }]
-  }"|
+  }"
 ```
 
