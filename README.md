@@ -1,6 +1,6 @@
 # About 
 
-This repository you can find the code for running whisperX[https://github.com/m-bain/whisperX] using KServe Model Server API[https://kserve.github.io/website/docs/model-serving/predictive-inference/frameworks/custom-predictor].
+This repository you can find the code for running [WhisperX](https://github.com/m-bain/whisperX) using [KServe Model Server API](https://kserve.github.io/website/docs/model-serving/predictive-inference/frameworks/custom-predictor).
 
 
 > [!WARNING]  
