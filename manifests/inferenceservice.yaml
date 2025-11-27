@@ -7,8 +7,7 @@ spec:
   predictor:
     containers:
       - name: kserve-container
-        image: quay.io/rd09/whisperx-kserve:v0.1
-        #image: quay.io/rd09/kserve-runtime-whisperx:latest
+        image: quay.io/demo-org/whisperx-kserve:v0.1
         args:
           - --workers=1
           - --http_port=8080
@@ -16,7 +15,7 @@ spec:
         resources:
           limits:
             cpu: 2
-            memory: 10Gi
+            memory: 4Gi
           requests:
             cpu: 1
-            memory: 4Gi
+            memory: 2Gi
